@@ -1,0 +1,19 @@
+{
+  "name": "JIRA New Tab",
+  "short_name": "jiranewtab",
+  "description": "Open external links from JIRA in new tabs",
+  "version": "1.0.0",
+  "manifest_version": 2,
+  "content_scripts": [
+    {
+      "matches": [
+        "https://*.atlassian.net/*"
+      ],
+      "js": [
+        "contentscript.js"
+      ],
+      "run_at": "document_end"
+    }
+  ]
+}
+
